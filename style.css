@@ -215,7 +215,7 @@ span {
 /* стили для кнопки закрытия модального окна */
 .close {
   position: absolute;
-  bottom:127px;
+  bottom:147px;
   right:20px;
   font-size: 40px;
   cursor: pointer;
