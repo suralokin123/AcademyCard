@@ -250,7 +250,22 @@ footer {
   width: 100px;
 }
 
-@media (min-width: 375px) and (max-width: 1200px) {
+.footer-text1 {
+  color:#fff;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+
+  .header__wrapper {
+    display: flex;
+    gap:60px;
+  }
+
+  .navigation {
+    width:200px;
+    font-size:20px;
+  }
+
   .modal {
     position: fixed;
     width: 400px;
