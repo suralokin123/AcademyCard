@@ -254,7 +254,11 @@ footer {
   color:#fff;
 }
 
-@media (min-width: 300px) and (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 300px)   {
+
+  .container {
+    max-width:370px;
+  }
 
   .header__wrapper {
     display: flex;
