@@ -215,8 +215,8 @@ span {
 /* стили для кнопки закрытия модального окна */
 .close {
   position: absolute;
-  top: 280px;
-  right: 520px;
+  bottom:127px;
+  right:20px;
   font-size: 40px;
   cursor: pointer;
   z-index: 100000;
@@ -284,8 +284,8 @@ footer {
   }
 
   .close {
-    right: 60px;
-    top: 170px;
+    right:20px;
+    top:2px;
   }
 
   .mail {
