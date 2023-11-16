@@ -86,7 +86,7 @@ header {
   border-radius: 20px;
   text-align: center;
   position: relative;
-  left: 620px;
+  left:610px;
 }
 
 .information_card {
@@ -177,7 +177,9 @@ span {
   display: flex;
   color: #fff;
   background-color: #007bff;
-  padding: 30px 15px;
+  padding: 30px 20px;
+  height:70px;
+  align-items: center;
   text-decoration: none;
   left: 100px;
   top: 10px;
@@ -215,7 +217,7 @@ span {
 /* стили для кнопки закрытия модального окна */
 .close {
   position: absolute;
-  bottom:147px;
+  bottom:116px;
   right:20px;
   font-size: 40px;
   cursor: pointer;
