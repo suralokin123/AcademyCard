@@ -1,29 +1,37 @@
+
+
+
 const cardLinks = document.querySelectorAll('.information-cards a');
 
-let infoOpened = false;
+let clickCounts = { card1: 0, card2: 0, card3: 0 };
 
 cardLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
-    if (e.target.classList.contains('card1') || e.target.classList.contains('card2') || e.target.classList.contains('card3')) {
-      const selectedCard = e.target.getAttribute('class').slice(-1);
-      const allCards = document.querySelectorAll('.information-cards > div');
+    const selectedCard = e.target.getAttribute('class').slice(-1);
+    const allCards = document.querySelectorAll('.information-cards > div');
 
-      allCards.forEach(card => {
-        if (card.getAttribute('class').slice(-1) === selectedCard) {
-          card.style.display = 'block';
-          if (infoOpened) {
-            openModal();
-          } else {
-            infoOpened = true;
-          }
-        } else {
-          card.style.display = 'none';
+    allCards.forEach(card => {
+      if (card.getAttribute('class').slice(-1) === selectedCard) {
+        card.style.display = 'block';
+        clickCounts[selectedCard]++;
+        if (clickCounts[selectedCard] === 2) {
+          openModal();
         }
-      });
-    }
+      } else {
+        card.style.display = 'none';
+      }
+    });
   });
 });
+
+// Функция для открытия модального окна
+function openModal() {
+  var modal = document.querySelector('.modal');
+  modal.style.display = 'block';
+  // Сброс счетчика после открытия модального окна
+  clickCounts = { card1: 0, card2: 0, card3: 0 };
+}
 
 
 
@@ -51,12 +59,32 @@ function showInfo(infoId) {
 function openModal() {
   var modal = document.querySelector('.modal');
   modal.style.display = 'block';
+  // Сохраняем информацию о состоянии модального окна в локальном хранилище
+  localStorage.setItem('modalOpened', 'true');
 }
 
 // Добавляем обработчик для кнопки закрытия модального окна
 document.querySelector('.close').addEventListener('click', function() {
   var modal = document.querySelector('.modal');
   modal.style.display = 'none';
+  // Удаляем информацию о состоянии модального окна из локального хранилища при закрытии
+  localStorage.removeItem('modalOpened');
 });
 
+// Функция для проверки состояния модального окна при загрузке страницы
+window.addEventListener('load', function() {
+  var modalState = localStorage.getItem('modalOpened');
+  if (modalState && modalState === 'true' && !isFirstVisit()) {
+    openModal();
+  }
+});
 
+// Функция для определения, является ли это первым посещением пользователя
+function isFirstVisit() {
+  if (!localStorage.getItem('visited')) {
+    localStorage.setItem('visited', 'true');
+    return true;
+  } else {
+    return false;
+  }
+}

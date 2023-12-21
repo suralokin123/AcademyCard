@@ -1,18 +1,26 @@
-document.querySelectorAll('.information-cards a').forEach((link, index) => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-    const modal = document.querySelector('.modal');
-    modal.classList.add('show'); // добавляем класс для отображения модального окна
+const cardLinks = document.querySelectorAll('.information-cards a');
+
+let infoOpened = false;
+
+cardLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (e.target.classList.contains('card1') || e.target.classList.contains('card2') || e.target.classList.contains('card3')) {
+      const selectedCard = e.target.getAttribute('class').slice(-1);
+      const allCards = document.querySelectorAll('.information-cards > div');
+
+      allCards.forEach(card => {
+        if (card.getAttribute('class').slice(-1) === selectedCard) {
+          card.style.display = 'block';
+          if (infoOpened) {
+            openModal();
+          } else {
+            infoOpened = true;
+          }
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
   });
 });
-
-let clickCount = 0;
-
-function showInfo(infoId) {
-  clickCount++;
-  if (clickCount === 2) {
-    // Дополнительный код для отображения модального окна
-    alert('Модальное окно открывается на втором клике');
-  }
-  event.preventDefault(); // Предотвращение перехода по ссылке
-}
