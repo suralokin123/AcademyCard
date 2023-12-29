@@ -73,11 +73,6 @@ header {
   text-align: center;
 }
 
-.cards1,
-.cards2,
-.cards3 {
-}
-
 .info {
   background-color: #1c7dbe;
   width: 300px;
@@ -214,9 +209,6 @@ span {
   visibility: visible;
 }
 
-.modal.show:hover {
-}
-
 .mail {
   position: relative;
   left: 210px;
@@ -333,7 +325,10 @@ footer {
   .mail {
     width:120px;
     height:30px;
+  }
 
+  .mails1 {
+ 
   }
 
   .mail-text {
