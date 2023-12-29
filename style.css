@@ -177,16 +177,6 @@ span {
   color: #007bff;
 }
 
-.information-cards {
-  position: relative;
-  bottom:30px;
-}
-
-.position-card {
-  position: relative;
-  right:30px;
-}
-
 .modal-content a {
   display: flex;
   color: #fff;
@@ -285,16 +275,12 @@ footer {
 
   .header__wrapper {
     display: flex;
-    justify-content:space-between;
-    position: relative;
-    left:50px;
+    gap:60px;
   }
 
 
   .navigation {
-    position: absolute;
-    width:100px;
-    left:160px;
+    width:200px;
     font-size:20px;
   }
 
