@@ -87,6 +87,7 @@ header {
   text-align: center;
   position: relative;
   left:610px;
+  bottom:20px;
 }
 
 .information_card {
@@ -96,6 +97,8 @@ header {
 }
 
 .infos1 {
+position:relative;
+bottom:20px;
 }
 
 .cart1 {
@@ -114,6 +117,7 @@ header {
 
 .card1 {
   font-size: 50px;
+  position: relative;
   color: #0011ff;
 }
 
@@ -171,6 +175,16 @@ header {
 span {
   font-weight: 800;
   color: #007bff;
+}
+
+.information-cards {
+  position: relative;
+  bottom:30px;
+}
+
+.position-card {
+  position: relative;
+  right:30px;
 }
 
 .modal-content a {
@@ -256,20 +270,36 @@ footer {
   color:#fff;
 }
 
-@media (max-width: 1200px) and (min-width: 300px)   {
+@media (max-width: 1200px) and (min-width: 200px)   {
 
   .container {
     max-width:370px;
   }
 
-  .header__wrapper {
+  .position-card {
     display: flex;
-    gap:60px;
+    justify-content:space-around;
+    position: relative;
+    right:46px;
   }
 
+  .header__wrapper {
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    left:50px;
+  }
+
+
   .navigation {
-    width:200px;
+    position: absolute;
+    width:100px;
+    left:160px;
     font-size:20px;
+  }
+
+  .logo {
+    width:80px;
   }
 
   .modal {
@@ -278,11 +308,25 @@ footer {
   }
 
   .modal-content {
-    width: 300px;
-    height: 200px;
+    width:210px;
+    height: 230px;
     position: relative;
-    left:180px;
+    left:116px;
     top:350px;
+  }
+
+  /* .modal-content a {
+    position: absolute;
+    left:400px;
+  } */
+
+  .information-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width:200px;
   }
 
   .close {
@@ -290,20 +334,34 @@ footer {
     top:-7px;
   }
 
+
   .mail {
-    width:200px;
+    width:120px;
     height:30px;
-    position:relative;
-    top:20px;
+
   }
 
   .mail-text {
-    font-size:20px;
+    font-size:14px;
+    width:100px;
+    position: absolute;
+    left:10px;
+    top:10px;
+  }
+
+  .cart1 {
+    width:200px;
+  }
+
+  .card1 {
+    position: relative;
+    bottom:20px;
   }
 
   .info {
     position: relative;
-    left:30px;
+    left:50px;
+    bottom:20px;
   }
 
   .modal-content a {
