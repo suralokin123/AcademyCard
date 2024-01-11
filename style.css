@@ -334,7 +334,7 @@ footer {
   .mail-text {
     font-size:14px;
     width:100px;
-    position: absolute;
+    position:absolute;
     left:10px;
     top:10px;
   }
@@ -355,14 +355,16 @@ footer {
   }
 
   .modal-content a {
-    position: relative;
-    left:30px;
+    position:absolute;
+    left:50px;
+    top:117px;
+    height:70px;
   }
 
   .position__modal {
     display: flex;
     justify-content: center;
-    position: absolute;
+    position:absolute;
     right:130px;
   }
 
