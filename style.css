@@ -137,6 +137,33 @@ bottom:20px;
   text-align: center;
 }
 
+.carta3 {
+  border-radius: 10px;
+  padding: 10px; /* Добавим отступ для удобства */
+  display: inline-block; /* Для применения анимации */
+  position: relative; /* Необходимо для абсолютной позиции псевдо-элемента */
+  animation: changeColor 5s infinite; /* Применяем анимацию без конца */
+  backdrop-filter: blur(10px); /* Добавляем блюр */
+  -webkit-background-clip: text; /* Применяем стиль только к тексту для WebKit браузеров */
+  color: transparent; /* Делаем текст невидимым, чтобы показывался только через background-clip */
+}
+
+@keyframes changeColor {
+  50% {
+    background-color: rgb(255, 25, 0); /* Начальный цвет фона */
+    color: transparent; /* Начальный цвет текста (невидимый) */
+  }
+  80% {
+    background-color: rgb(13, 0, 255); /* Цвет, в который будет переливаться фон */
+    color: transparent; /* Цвет текста (невидимый) остается таким же */
+  }
+  20% {
+    background-color: rgb(149, 0, 255); /* Конечный цвет фона */
+    color: transparent; /* Конечный цвет текста (невидимый) */
+  }
+}
+
+
 .modal {
   display: none;
   position: fixed;
