@@ -96,6 +96,32 @@ position:relative;
 bottom:20px;
 }
 
+.video-information {
+
+}
+
+
+
+video {
+  border: 5px solid gold; /* Золотая рамка */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 166, 255); /* Тень */
+  width: 80%;
+}
+
+.video-size {
+  display: flex;
+  justify-content: center;
+  padding:50px;
+  width:1000px;
+}
+
+.number-cart {
+  color: #fff200;
+  font-weight: 800;
+  font-size: 25px;
+}
+
   .position-card {
     position:relative;
     right:30px;
