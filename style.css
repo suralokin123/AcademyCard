@@ -362,6 +362,11 @@ footer {
     flex-direction: column;
   }
 
+  .video {
+    width:300px;
+  }
+  
+
   .info {
     width:200px;
   }
