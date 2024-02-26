@@ -125,6 +125,13 @@ video:hover {
     top:20px;
 }
 
+.videoinstruction {
+  display: flex;
+  padding:100px;
+  justify-content: center;
+  font-size:30px;
+}
+
 .cart1 {
   text-align: center;
   font-size: 20px;
@@ -294,6 +301,8 @@ span {
 
 .footer-text {
   color: beige;
+  font-size:15px;
+  width:120px;
 }
 
 footer {
@@ -306,8 +315,11 @@ footer {
   width: 100px;
 }
 
+
 .footer-text1 {
   color:#fff;
+  width:20px;
+  font-size:15px;
 }
 
 @media (max-width: 1200px) and (min-width: 200px)   {
@@ -370,6 +382,10 @@ footer {
   .info {
     width:200px;
   }
+  
+  .videoinstruction {
+ 
+  }
 
   .close {
     right:10px;
@@ -424,8 +440,43 @@ footer {
   }
 
 
+
+  .footer_right-side {
+    position: relative;
+    right:10px;
+    font-size:10px;
+    width:165px;
+  }
+
+  .footer-text1 {
+    font-size:13px;
+  }
+
+  .footer-text {
+    font-size:15px;
+    width:10px;
+  }
+
+  .footer__wrapper {
+    width:350px;
+  }
+
+  .metrika {
+    position:absolute; 
+    left:-9999px;
+  }
+
+  .metrika-img {
+    width:10px;
+  }
+
+  .footer_center-side {
+    width:350px;
+  }
+
   footer {
-    position:relative;
-    top:20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
   }
 }
