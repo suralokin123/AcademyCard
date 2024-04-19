@@ -352,22 +352,24 @@ footer {
   }
 
   .modal {
-    position: fixed;
-    width: 400px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
   .modal-content {
-    width:210px;
-    height: 230px;
     position: relative;
-    left:116px;
-    top:350px;
-  }
+    background-color: #fff;
+    padding: 20px;
 
-  /* .modal-content a {
-    position: absolute;
-    left:400px;
-  } */
+  }
 
   .information-cards {
     display: flex;
@@ -381,10 +383,6 @@ footer {
 
   .info {
     width:200px;
-  }
-  
-  .videoinstruction {
- 
   }
 
   .close {
@@ -426,17 +424,22 @@ footer {
   }
 
   .modal-content a {
-    position:absolute;
-    left:50px;
-    top:117px;
-    height:70px;
+    position: absolute;
+    left: 50px;
+    top: 117px;
+    height: 70px;
   }
 
   .position__modal {
     display: flex;
     justify-content: center;
-    position:absolute;
-    right:130px;
+    position: absolute;
+    right: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    filter: blur(1000px); /* добавляем размытие */
+  }
+  .modal-content:hover {
+    background-color: #0011ff;
   }
 
 
