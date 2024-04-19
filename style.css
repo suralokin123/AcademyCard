@@ -199,11 +199,12 @@ video:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width:100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  backdrop-filter: blur(10px); /* Это добавит эффект блюра на задний фон */
   /* добавляем анимацию */
 }
 
@@ -215,6 +216,7 @@ video:hover {
   position: absolute;
   top: 50%;
   left: 50%;
+  height:200px;
   border-radius: 10px;
   transform: translate(-50%, -50%);
   background-color: #fff;
@@ -265,19 +267,12 @@ span {
   opacity: 1;
   visibility: visible;
 }
-
-.mail {
-  position: relative;
-  left: 210px;
-  top: 20px;
-  width: 300px;
-}
-
 /* стили для кнопки закрытия модального окна */
 .close {
   position: absolute;
   bottom:116px;
   right:20px;
+  top:5px;
   font-size: 40px;
   cursor: pointer;
   z-index: 100000;
@@ -286,6 +281,7 @@ span {
 
 .modal-text {
   font-size: 20px;
+  width:300px;
 }
 
 .footer__wrapper {
@@ -358,18 +354,69 @@ footer {
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
-      z-index: 999;
       display: flex;
+      backdrop-filter: blur(5px); /* Это добавит эффект блюра на задний фон */
       justify-content: center;
       align-items: center;
+  }
+
+  .position__modal {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 130px;
+    top:380px;
+    transition:ease 0.3s; /* Добавим анимацию при наведении */
+  }
+
+  .modal-content:hover {
+    box-shadow: 0 0 5px 5px red; /* Это добавит эффект красной обводки */
+    transition:ease 0.3s; /* Добавим анимацию при наведении */
   }
 
   .modal-content {
     position: relative;
     background-color: #fff;
     padding: 20px;
-
+    width:240px;
+    height:220px;
+    transition:ease 1.8s; /* Добавим анимацию при наведении */
   }
+
+  .close {
+    right:10px;
+    top:-7px;
+    height:2px;
+  }
+
+
+  .modal-content a {
+    position: absolute;
+    left:66px;
+    top:130px;
+    height:70px;
+    transition:ease 0.3s; /* Добавим анимацию при наведении */
+  }
+
+  .modal-text {
+    width:200px;
+  }
+
+  .modal-text:hover {
+    color: #fff;
+    transition: ease 0.3s; /* Добавим анимацию при наведении */
+  }
+
+
+  .mail-text {
+    font-size:14px;
+    width:100px;
+    position:absolute;
+    left:10px;
+    top:10px;
+    transition:ease 0.3s; /* Добавим анимацию при наведении */
+  }
+
 
   .information-cards {
     display: flex;
@@ -385,28 +432,12 @@ footer {
     width:200px;
   }
 
-  .close {
-    right:10px;
-    top:-7px;
-  }
-
 
   .mail {
     width:120px;
     height:30px;
   }
 
-  .mails1 {
- 
-  }
-
-  .mail-text {
-    font-size:14px;
-    width:100px;
-    position:absolute;
-    left:10px;
-    top:10px;
-  }
 
   .cart1 {
     width:200px;
@@ -423,23 +454,9 @@ footer {
     bottom:20px;
   }
 
-  .modal-content a {
-    position: absolute;
-    left: 50px;
-    top: 117px;
-    height: 70px;
-  }
-
-  .position__modal {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 130px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    filter: blur(1000px); /* добавляем размытие */
-  }
   .modal-content:hover {
-    background-color: #0011ff;
+    background-color: #6200ff;
+    transition: 1.2s;
   }
 
 
