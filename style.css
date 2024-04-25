@@ -361,9 +361,9 @@ footer {
 
   .position__modal {
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     position:absolute;
-    right:50px;
+    right:60px;
     top:380px;
     transition:ease 0.3s; /* Добавим анимацию при наведении */
   }
