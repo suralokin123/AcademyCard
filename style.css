@@ -153,7 +153,7 @@ video:hover {
 }
 
 .card2 {
-  color: rgb(0, 60, 255);
+  color: rgb(221, 0, 255);
   font-size: 50px;
 }
 
@@ -192,6 +192,15 @@ video:hover {
     color: transparent; /* Конечный цвет текста (невидимый) */
   }
 }
+
+.information-cards a {
+  transition: background-color 0.5s;
+}
+
+.information-cards a.highlighted {
+  background-color: yellow;
+}
+
 
 
 .modal {
