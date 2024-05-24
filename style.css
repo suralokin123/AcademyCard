@@ -67,6 +67,31 @@ header {
   gap: 120px;
 }
 
+.cards2 {
+  text-align: center;
+}
+
+.card1 {
+  font-size: 50px;
+  position: relative;
+  color: #0011ff;
+}
+
+.card2 {
+  color: rgb(221, 0, 255);
+  font-size: 50px;
+}
+
+.card3 {
+  color: #ff0000;
+  font-size: 50px;
+}
+
+.cards3 {
+  font-size: 20px;
+  text-align: center;
+}
+
 .cards1 {
   border-radius: 10px;
   font-size: 20px;
@@ -142,30 +167,29 @@ video:hover {
   color: #fff;
 }
 
-.cards2 {
-  text-align: center;
+
+
+.card1:active, .card2:active, .card3:active {
+  background-color: rgb(89, 100, 255);
+  border-radius: 10px;
 }
 
-.card1 {
-  font-size: 50px;
-  position: relative;
-  color: #0011ff;
+.card1:hover {
+  background-color: rgba(0, 98, 255, 0.5);
+  border-radius:10px;
 }
 
-.card2 {
-  color: rgb(221, 0, 255);
-  font-size: 50px;
+.card2:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius:10px;
 }
 
-.card3 {
-  color: #ff0000;
-  font-size: 50px;
+.card3:hover {
+  background-color: rgba(0, 229, 255, 0.5);
+  border-radius:10px;
 }
 
-.cards3 {
-  font-size: 20px;
-  text-align: center;
-}
+
 
 .carta3 {
   border-radius: 10px;
