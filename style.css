@@ -110,6 +110,48 @@ header {
   bottom:20px;
 }
 
+.infos1 {
+  display: flex;
+  text-align:center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.main-text1 {
+  font-size:20px;
+  text-align: center;
+  text-decoration:underline;
+  font-weight: 900;
+}
+
+.main-text2 {
+  font-weight: 900
+}
+
+.main-text3 {
+  font-size:20px;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.main-text4 {
+  font-size:20px;
+}
+
+.main-text5 {
+  font-size:30px;
+}
+
+.main-text6 {
+  font-size:20px;
+  font-weight: 900;
+  text-decoration: underline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .information_card {
   color: #00ff22;
   font-weight: 800;
