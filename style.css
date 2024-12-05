@@ -196,6 +196,7 @@ header {
 .infos1 {
 position:relative;
 bottom:20px;
+width:350px;
 }
 
 .video-information {
@@ -469,6 +470,10 @@ footer {
       align-items: center;
   }
 
+  .main-text2 {
+    font-size:20px;
+  }
+
   .position__modal {
     display: flex;
     justify-content:center;
@@ -554,9 +559,14 @@ footer {
     height:30px;
   }
 
+  .card {
+    width:300px;
+    height:300px;
+  }
+
 
   .cart1 {
-    width:200px;
+    text-align: center;
   }
 
   .card1 {
@@ -569,6 +579,10 @@ footer {
     left:50px;
     bottom:20px;
   }
+
+  .infos1 {
+    width:250px;
+    }
 
   .modal-content:hover {
     background-color: #6200ff;
